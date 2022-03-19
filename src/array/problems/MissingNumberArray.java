@@ -23,11 +23,13 @@ public class MissingNumberArray {
 			return -1;
 		} else if (numbers.length == 0) {
 			return -1;
+			//Logic is to add all the number from the array and subtract from summation
 		} else {
 			int sumOfNumbers = 0;
 			for (int i = 0; i < numbers.length; i++) {
 				sumOfNumbers = sumOfNumbers + numbers[i];
 			}
+			//summation of first N natural integer numbers is N(N+1)/2
 			return ((expectedSize * (expectedSize + 1)) / 2) - sumOfNumbers;
 
 		}
